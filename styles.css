@@ -1,6 +1,10 @@
 
 
 
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +26,17 @@ main {
 }
 
 
-article {
-    flex: 2; 
-    overflow-y: auto; 
-    padding: 10px; 
-}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; 
+    }
 
+    article, aside {
+        flex: auto; 
+        width: 100%; 
+    }
+
+}
 
 aside {
     flex: 1; 
